@@ -1,12 +1,14 @@
 # conway_ttl
-Conway's Game of Life cell logic in six TTL ICs.
+Conway's Game of Life cell logic in four TTL ICs.
 
-![conway_ttl_](https://user-images.githubusercontent.com/414986/174471073-a86463c9-7177-4a4c-a9c9-7ed7689ff8cd.png)
+![conway_ttl_](https://raw.githubusercontent.com/pzagrebin/conway_ttl/main/conway_ttl.png)
 
-Five 181 ALUs produce number of alive neighbors, then multiplexer choose the next state:
+Two 283 adders produce sum of alive neighbor cells from seven cells,
+then multiplexer choose the next state taking into account the last neighbor cell:
 
-0,1,4,5,6,7,8 -> dead
+last cell is dead: 0,1,4,5,6,7 -> dead; 2 -> previous state; 3 -> alive
 
-2 -> previous state
+last cell is alive: 0,3,4,5,6,7 -> dead; 1 -> previous state; 2 -> alive
 
-3 -> alive
+There is .digg file for "Digital" simulator.
+https://github.com/hneemann/Digital
