@@ -1,5 +1,5 @@
 # conway_ttl
-Conway's Game of Life cell logic in four TTL ICs.
+Conway's Game of Life cell logic in three TTL ICs.
 
 ![conway_ttl_](https://raw.githubusercontent.com/pzagrebin/conway_ttl/main/conway_ttl.png)
 
