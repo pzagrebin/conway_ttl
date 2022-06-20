@@ -10,4 +10,6 @@ last cell is dead: 0,1,4,5,6,7 -> dead; 2 -> previous state; 3 -> alive
 
 last cell is alive: 0,3,4,5,6,7 -> dead; 1 -> previous state; 2 -> alive
 
+74250 output is inverted, so part of second adder is used to invert in back to positive.
+
 [.dig](https://github.com/pzagrebin/conway_ttl/blob/main/conway_ttl.dig) file for [Digital](https://github.com/hneemann/Digital) simulator is included.
